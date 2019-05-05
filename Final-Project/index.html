@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+  	<meta name="author" content="Nahdlah">
+    <title>Chocolate Milk</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+            <header>
+                    <div class="container">
+                        <h1>CHOCOLATE MILK</h1>
+                      <h2 class="logo"></h2>
+                
+                      <nav>
+                        <ul>
+                          <li><a href="home.html">Home</a></li>
+                          <li><a href="about.html">About</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </header>
+    
+<!-- Showcasae -->
+    <section id="showcase">
+      <br>
+       <!-- Slideshow container -->
+          
+          <div class="w3-content w3-display-container">
+          
+          <div class="w3-display-container mySlides">
+            <img src="img/pic1.jpg">
+            <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+            </div>
+          </div>
+          
+          <div class="w3-display-container mySlides">
+            <img src="img/pic2.jpg">
+            <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+            </div>
+          </div>
+          
+          <div class="w3-display-container mySlides">
+            <img src="img/pic3.jpg">
+            <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+            </div>
+          </div>
+          
+          <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+          
+          </div>
+          
+          <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+          
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+          }
+          </script>
+
+<!-- Footer -->
+    <footer>
+      <p>Nahdlah Nurul &copy; 2019</p>
+    </footer>
+
+
+  </body>
+</html>
